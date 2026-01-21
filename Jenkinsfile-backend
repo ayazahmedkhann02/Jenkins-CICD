@@ -139,9 +139,6 @@ pipeline {
         }
         
         stage('Push to Registry') {
-            when {
-                branch 'main'
-            }
             steps {
                 echo '📤 Pushing Docker image to registry...'
                 script {
